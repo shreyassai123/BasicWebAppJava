@@ -73,17 +73,20 @@ Enter a name for your team, and the game code shared in class.
 
 Enter the URL for your public web app, with /api appended to the end.
 
-_It is very important you include the /api at the end or the game server will not send requests to the correct endpoint._
+**It is very important you include the /api at the end or the game server will not send requests to the correct endpoint.**
 
 The game server will periodically send queries to the endpoint.
-
 If it's working, your app (however it's running) will log output indicating the received query.
 
-If you enter the incorrect URL, you can just join the game anew with a new URL (let us know in chat and we can remove the previous entry).
+![Example logs](./images/example-request-logs.png)
+
+If you enter the incorrect URL, you can just join the game anew with a new URL.
+If this happens, let an instructor know and we will delete the previous entry.
 
 ### Warmup
 
-In the warmup round, the game server will only send the query "What is your name?"  The correct answer for your web app is your team name, so you will be giving the "incorrect" response at first.
+In the warmup round, the game server will only send the query "What is your name?".
+The correct answer for your web app is your team name, so you will be giving the "incorrect" response at first.
 
 In warmup, try to get your app to respond correctly.
 
