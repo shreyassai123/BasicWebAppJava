@@ -9,30 +9,35 @@ Your team will set up a small web app and log into a game website.  The game ser
 
 The point of the exercise isn't to develop a perfect web application in response to the game server, but to engage in rapid/continuous iteration and deployment, and reflect on the challenges.
 
-We have set up this repository with a simple Java web server as a starting point, that you can deploy within codespaces.
+We have set up this repository with a simple Java web server as a starting point, that you can deploy within Codespaces.
 
-## BasicWebApp Java
+## The Starter Codebase: Basic Web App (Java)
 
-Forked from https://github.com/rchatley/BasicWebApp
+This code is forked from https://github.com/rchatley/BasicWebApp.
+It contains a simple Java web server that listens on port 8080 and exposes a single `/api` HTTP endpoint.
+Queries received on the `/api` endpoint are handed to `QueryProcessor.process(String)`.
 
-This code and repository is deliberately simple.
+### Getting Started
 
-This is a Java application that provides a simple web server that listens on port 8080 and provides a single `/api` endpoint.
+To run the code locally on your machine, you should use the provided development container.
+To use it, you should use CMD (or CTRL) + SHIFT + P to bring up a dropdown menu; from there, you should type or select "Dev Containers: Rebuild Container" to build the development container and drop you in it.
 
-Queries received on the `/api` endpoint are handed to `QueryProcessor.process(String)`
+To build and run the web app via the command line, you will need to execute the following commands within the terminal:
 
-The project is set up using maven; note the `pom.xml`
-
-You can run it in the usual ways --- from the Maven view in VSCode, using maven at the command line, or selecting "run" on the main method, as examples.
+```
+mvn clean package
+java -jar target/BasicWebApp-1.0-SNAPSHOT.jar
+```
 
 ## Initial setup and deployment
 
-As a team, you need at least one person to have opened up the project and launched a codespace with it.
-When you get the code built and running, it will launch the web app within codespaces, and codespaces will automatically set up port forwarding for you.
+As a team, you need at least one person to have opened up the project and launched a Codespace with it.
+When you get the code built and running, it will launch the web app within Codespaces, and Codespaces will automatically set up port forwarding for you.
 
 By default, this URL is private within a LAN.  You can make it public by either:
 
-* Selecting "Make Public" in the VSCode prompt that appears after the application launches.  It reads "Your application running on port 8080 is available..." "Make Public" is a button below the message.
+* Selecting "Make Public" in the VSCode prompt that appears after the application launches.
+It reads "Your application running on port 8080 is available..." "Make Public" is a button below the message.
 
 Or:
 
@@ -41,13 +46,13 @@ Or:
 3. Select "Port Visibility"
 4. Select "Public"
 
-Note that this allows your private code, deployed within codespaces, to serve a publicly-facing web app!
+Note that this allows your private code, deployed within Codespaces, to serve a publicly-facing web app!
 
-You can also visit your web app yourself by navigating to that URL; from a browser, you may need to select "Continue" the first time you visit a web app served from a codespace.
+You can also visit your web app yourself by navigating to that URL; from a browser, you may need to select "Continue" the first time you visit a web app served from a Codespace.
 
 ## Enter the competition
 
-Navigate to https://extreme-startup.fly.dev/
+Navigate to https://extreme-startup.fly.dev
 
 Enter a name for your team, and the game code shared in class.
 
