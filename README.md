@@ -22,12 +22,16 @@ Queries received on the `/api` endpoint are handed to `QueryProcessor.process(St
 To run the code locally on your machine, you should use the provided development container.
 To use it, you should use CMD (or CTRL) + SHIFT + P to bring up a dropdown menu; from there, you should type or select "Dev Containers: Rebuild Container" to build the development container and drop you in it.
 
-To build and run the web app via the command line, you will need to execute the following commands within the terminal:
+**To build and run the web app via the command line,** you will need to execute the following commands within the terminal:
 
 ```
 mvn clean package
 java -jar target/BasicWebApp-1.0-SNAPSHOT.jar
 ```
+
+**To run the tests from within VS Code,** you can click the green arrow in the gutter next to the test, as shown below.
+
+![Running tests in VS Code](./images/run-tests.png)
 
 ## Initial setup and deployment
 
