@@ -17,7 +17,7 @@ This code is forked from https://github.com/rchatley/BasicWebApp.
 It contains a simple Java web server that listens on port 8080 and exposes a single `/api` HTTP endpoint.
 Queries received on the `/api` endpoint are handed to `QueryProcessor.process(String)`.
 
-### Getting Started
+### Local Setup (via Dev Container or Codespace)
 
 To run the code locally on your machine, you should use the provided development container.
 To use it, you should use CMD (or CTRL) + SHIFT + P to bring up a dropdown menu; from there, you should type or select "Dev Containers: Rebuild Container" to build the development container and drop you in it.
