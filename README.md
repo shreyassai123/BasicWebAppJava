@@ -43,26 +43,27 @@ java -jar target/BasicWebApp-1.0-SNAPSHOT.jar
 mvn test
 ```
 
-## Initial setup and deployment
+## Deployment (via Codespaces)
 
-As a team, you need at least one person to have opened up the project and launched a Codespace with it.
-When you get the code built and running, it will launch the web app within Codespaces, and Codespaces will automatically set up port forwarding for you.
+**As a team, you need at least one person to have launched a Codespace for the project.**
+One person from your team will be responsible for hosting your team's web app from within their Codespace instance.
+To do so, that team member will first need to launch the web app using either the IDE or CLI as described above.
+Note that you may need to hit the "Play" button in the top right corner the first time that you deploy from codespaces, as shown below.
 
-By default, this URL is private within a LAN.  You can make it public by either:
+![First time launch on Codespaces](./images/launch-codespaces.png)
 
-* Selecting "Make Public" in the VSCode prompt that appears after the application launches.
-It reads "Your application running on port 8080 is available..." "Make Public" is a button below the message.
+Upon launching the web app, VS Code will automatically forward port 8080 to a web address that you can access from your browser.
 
-Or:
+![alt text](./images/before-port-adjustment.png)
 
-1. Navigate to the Ports tab
-2. Right-click the entry for port 8080
-3. Select "Port Visibility"
-4. Select "Public"
+By default, this URL is private and can only be accessed by you.
+**You must make it public to participate in the competition.**
+To do so, you can right click on the entry in the Ports table and set the port visibility to Public as shown below.
 
-Note that this allows your private code, deployed within Codespaces, to serve a publicly-facing web app!
+![alt text](./images/port-adjustment.png)
 
-You can also visit your web app yourself by navigating to that URL; from a browser, you may need to select "Continue" the first time you visit a web app served from a Codespace.
+After doing so, you should ask a different member to access the web app from the provided URL.
+You may need to select "Continue" the first time that you visit a web app served from a Codespace instance.
 
 ## Enter the competition
 
